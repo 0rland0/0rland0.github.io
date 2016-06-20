@@ -11,10 +11,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
 	<body class="landing">
 		<div id="page-wrapper">
+
+
 
 			<!-- Header -->
 				<!-- <header id="header" class="alt">
@@ -45,12 +48,16 @@
 				</header> -->
 
 			<!-- Banner -->
+
 				<section id="banner">
 					<h2>understand.ai</h2>
 					<p>We <span class="element"></span> your data</p>
 					<!-- <p>we make your data useful</p> -->
 					<ul class="actions">
-						<li><a href="#" class="button special">Contact us</a></li>
+						<!-- Trigger the modal with a button -->
+<!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
+
+						<li><a href="#" class="button special" data-toggle="modal" data-target="#myModal">Contact us</a></li>
 						<li><a href="#" class="button">Learn More</a></li>
 					</ul>
 				</section>
@@ -173,6 +180,7 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/typed.js"></script>
+			<script src="assets/js/bootstrap.min.js"></script>
 			<script>
 					$(function(){
 							$(".element").typed({
@@ -182,5 +190,41 @@
 							});
 					});
 			</script>
+
+			<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Get a free test</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+				<form action="https://getsimpleform.com/messages?form_api_token=acd9ad0f4fa3cdb323880aaac1beef11" method="post">
+					<!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+					<input type='hidden' name='redirect_to' value='https://0rland0.github.com' />
+					<!-- all your input fields here.... -->
+					<label>Upload your sample data here (CSV, zip, ...)</label>
+					<input type="file" name="sample-data" class="form-control">
+					<label>What's your name?</label>
+					<input type='text' name='name' />
+					<label>Company Name</label>
+					<input type='text' name='company-name' />
+					<label>Whats you cell phone number?</label>
+					<input type='text' name='phone-number' />
+					<label>Whats you email?</label>
+					<input type='text' name='email' />
+					<input type='submit' value='Submit' />
+				</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
 	</body>
 </html>

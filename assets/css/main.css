@@ -3037,7 +3037,9 @@
 		color: #fff;
 		padding: 12em 0 20em 0;
 		text-align: center;
-		box-shadow: inset 0 0 0 1000px rgba(0,0,0,.25);
+		/* Adjust the last value of the following line to set
+		transparency of background image */
+		box-shadow: inset 0 0 0 1000px rgba(0,0,0,.45);
 	}
 
 		#banner :last-child {
