@@ -57,8 +57,8 @@
 						<!-- Trigger the modal with a button -->
 <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
 
-						<li><a href="#" class="button special" data-toggle="modal" data-target="#myModal">Contact us</a></li>
-						<li><a href="#" class="button">Learn More</a></li>
+						<li><a href="#" class="button special" data-toggle="modal" data-target="#myModal">Request free demo</a></li>
+						<!-- <li><a href="#" class="button">Learn More</a></li> -->
 					</ul>
 				</section>
 			<!-- Main -->
@@ -138,16 +138,17 @@
 			<!-- CTA -->
 				<section id="cta">
 
-					<h2>Sign up for beta access</h2>
+					<h2>Get in contact now</h2>
 					<p>Concentrate on what you can do best and let us annotate your data.</p>
 
-					<form action="https://formspree.io/philorlando92@yahoo.de" method="POST">
+					<form>
 						<div class="row uniform 50%">
-							<div class="8u 12u(mobilep)">
+							<!-- <div class="8u 12u(mobilep)">
 								<input type="email" name="email" id="email" placeholder="Email Address" />
-							</div>
-							<div class="4u 12u(mobilep)">
-								<input type="submit" value="Sign Up" class="fit" />
+							</div> -->
+							<div class="12u 12u(mobilep)">
+								<!-- <a href="#" class="button special" data-toggle="modal" data-target="#myModal">Request free demo</a> -->
+								<input type="submit" value="Request free demo" class="fit" class="button special" data-toggle="modal" data-target="#myModal"/>
 							</div>
 						</div>
 					</form>
@@ -157,21 +158,22 @@
 			<!-- Footer -->
 				<footer id="footer">
 					<ul class="icons">
-						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<!-- <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li> -->
+						<!-- <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li> -->
 						<!-- <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li> -->
-						<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+						<!-- <li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li> -->
 						<!-- <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li> -->
 						<!-- <li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li> -->
 					</ul>
 					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; understand.ai. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</footer>
 
 		</div>
 
 		<!-- Scripts -->
+
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
 			<script src="assets/js/jquery.scrollgress.min.js"></script>
@@ -198,23 +200,25 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Get a free test</h4>
+        <h4 class="modal-title">Give us a taste of your data</h4>
       </div>
       <div class="modal-body">
-        <p>Some text in the modal.</p>
+        <p>Upload a sample of your data and get it labeled for free. Max 100 images or 100 csv rows.</p>
 				<form action="https://getsimpleform.com/messages?form_api_token=acd9ad0f4fa3cdb323880aaac1beef11" method="post">
 					<!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
 					<input type='hidden' name='redirect_to' value='https://0rland0.github.com' />
 					<!-- all your input fields here.... -->
-					<label>Upload your sample data here (CSV, zip, ...)</label>
+					<label>Sample data if available (CSV, zip, ...)</label>
 					<input type="file" name="sample-data" class="form-control">
-					<label>What's your name?</label>
+					<label>How should the result look like?</label>
+					<input type='text' name='task-description' />
+					<label>Your name?</label>
 					<input type='text' name='name' />
 					<label>Company Name</label>
 					<input type='text' name='company-name' />
-					<label>Whats you cell phone number?</label>
+					<label>Phone number</label>
 					<input type='text' name='phone-number' />
-					<label>Whats you email?</label>
+					<label>Email</label>
 					<input type='text' name='email' />
 					<input type='submit' value='Submit' />
 				</form>
