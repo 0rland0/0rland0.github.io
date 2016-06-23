@@ -58,7 +58,7 @@
 						<!-- Trigger the modal with a button -->
 <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
  						<!-- <li><a href="#" class="button special lightbox-61724662942359" data-toggle="modal" data-target="#myModal">Request free demo</a></li> -->
-						<li><a href="#" class="button special" data-toggle="modal" data-target="#myModal">Request free demo</a></li>
+						<li><a id="demo-request" href="#" class="button special" data-toggle="modal" data-target="#myModal">Request free demo</a></li>
 						<!-- <li><a href="#" class="button">Learn More</a></li> -->
 					</ul>
 				</section>
@@ -179,7 +179,7 @@
 							<div class="12u 12u(mobilep)">
 								<!-- <a href="#" class="button special" data-toggle="modal" data-target="#myModal">Request free demo</a> -->
 
-								<input type="button" value="Request free demo" class="fit" class="button special lightbox-61724662942359" data-toggle="modal" data-target="#myModal"/>
+								<input id="demo-request" type="button" value="Request free demo" class="fit" class="button special lightbox-61724662942359" data-toggle="modal" data-target="#myModal"/>
 							</div>
 						</div>
 					</form>
@@ -206,6 +206,16 @@
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
+			<script>
+			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			  ga('create', 'UA-79651140-1', 'auto');
+			  ga('send', 'pageview');
+
+			</script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
 			<script src="assets/js/jquery.scrollgress.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
@@ -223,16 +233,7 @@
 							});
 					});
 			</script>
-			<script>
-			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-			  ga('create', 'UA-79651140-1', 'auto');
-			  ga('send', 'pageview');
-
-			</script>
+			<script src="assets/js/googleanalytics.js"></script>
 			<div id="myModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
