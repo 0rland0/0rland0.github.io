@@ -95,6 +95,32 @@
 
 			}
 
+			// Smooth scrolling to containers with id
+			// https://css-tricks.com/snippets/jquery/smooth-scrolling/
+		  $('a[href*="#"]:not([href="#"])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html, body').animate({
+		          scrollTop: target.offset().top
+		        }, 1000);
+		        return false;
+		      }
+		    }
+		  });
+
+			// Add animation for typing words in banner
+			$('.element').typed({
+				strings: ['classify', 'tag', 'annotate', 'label', 'identify', 'caption', 'rate', 'parse'],
+				typeSpeed: 0,
+				loop: true,
+			});
+
+			// Track demo event clicks
+			$('#demo-request').click(function() {
+			  ga('send', 'event', 'demo-requested');
+			});
 	});
 
 })(jQuery);
